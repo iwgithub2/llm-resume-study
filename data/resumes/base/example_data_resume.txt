@@ -1,0 +1,13 @@
+Name: {{ applicant_name }}
+Email: synthetic@example.invalid
+
+Education:
+B.S. in Applied Mathematics, Example College, 2025
+
+Experience:
+Data Analysis Intern, Fictional Metrics Lab, June-August 2024
+- Cleaned synthetic datasets with Python and SQL.
+- Built weekly summary tables and documented data validation checks.
+
+Skills:
+Python, SQL, statistics, Git  

@@ -1,0 +1,4 @@
+Junior Data Analyst, Fictional Metrics Lab
+Requirements: Python, SQL, basic statistics, and careful documentation.
+Responsibilities: clean datasets, validate records, and prepare summary tables.
+Mathematics education or equivalent experience is helpful.  

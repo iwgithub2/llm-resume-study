@@ -1,0 +1,31 @@
+root: ..
+inputs:
+  resumes: data/resumes/base/*.txt
+  jobs: data/jobs/*.txt
+  names: data/names/names.csv
+  name_groups: configs/name_groups.yaml
+prompts:
+  system: templates/system_prompt.txt
+  evaluations:
+    - templates/evaluation_prompt.j2
+model:
+  name: Qwen/Qwen2.5-0.5B-Instruct
+  revision: 7ae557604adf67be50417f59c2c2f167def9a775
+  backend: vllm
+  device: cuda
+  dtype: float32
+  temperature: 0.0
+  top_p: 1.0
+  max_new_tokens: 256
+  seed: 42
+  max_model_len: 4096
+  gpu_memory_utilization: 0.7
+  local_files_only: false
+experiment:
+  repetitions: 2
+  order_seed: 42
+  batch_size: 4
+outputs:
+  results: results
+  generated: data/resumes/generated
+  analysis: analysis  

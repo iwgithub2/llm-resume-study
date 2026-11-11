@@ -1,0 +1,7 @@
+# Core and test tools. uv.lock also locks transitive and backend dependencies.
+# Recommended: uv sync --locked --extra dev [--extra transformers|--extra vllm]
+Jinja2==3.1.6
+PyYAML==6.0.3
+pydantic==2.12.3
+pytest==8.4.2
+ruff==0.14.3  

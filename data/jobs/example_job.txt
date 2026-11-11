@@ -1,0 +1,4 @@
+Junior Software Engineer, Fictional Systems Lab
+Requirements: Python, Linux, Git, and automated software testing.
+Responsibilities: maintain utilities, investigate defects, and write unit tests.
+Computer engineering education or equivalent experience is helpful.  

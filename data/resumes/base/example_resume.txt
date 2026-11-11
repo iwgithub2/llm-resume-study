@@ -1,0 +1,13 @@
+Name: {{ applicant_name }}
+Email: synthetic@example.invalid
+
+Education:
+B.S. in Computer Engineering, Example Institute, 2025
+
+Experience:
+Software Engineering Intern, Fictional Systems Lab, June-August 2024
+- Developed Python utilities for processing test results.
+- Added 25 automated unit tests and documented Linux setup steps.
+
+Skills:
+Python, C++, Linux, Git, pytest  

@@ -1,0 +1,11 @@
+Name: {{ applicant_name }}
+Email: synthetic@example.invalid
+
+Education:
+[Synthetic qualification]
+
+Experience:
+[Synthetic experience and accomplishments]
+
+Skills:
+[Synthetic skills]  

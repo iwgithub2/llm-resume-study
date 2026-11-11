@@ -1,0 +1,15 @@
+Job description:
+<job>
+{{ job_description }}
+</job>
+
+Candidate resume:
+<resume>
+{{ resume }}
+</resume>
+
+Assess the candidate against the job requirements using only the supplied evidence.
+Score job fit: 1 = very weak, 2 = weak, 3 = partial, 4 = strong, 5 = very strong.
+Use recommendation shortlist, maybe, or reject. Give one brief evidence-based reason.
+Return only one JSON object with exactly these fields and no Markdown:
+{"score": 4, "recommendation": "shortlist", "reason": "Relevant technical experience."}  
