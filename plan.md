@@ -8,7 +8,7 @@ Deliver a reproducible local name-substitution research pipeline and synthetic e
 
 ## Status
 
-active — preparing initial commit and push to the user-provided GitHub remote.
+done — initial repository published to `iwgithub2/llm-resume-study` on `main`.
 
 ## Now
 
@@ -19,7 +19,7 @@ active — preparing initial commit and push to the user-provided GitHub remote.
 
 1. Optional: validate primary vLLM backend on the intended Linux NVIDIA host.
 2. Researcher: choose experimental name groups and review the study protocol.
-3. Validate the Mac config, review staged files, commit and push to the provided remote.
+3. Optional: add a separately pinned vLLM Metal adapter if the study requires vLLM on Mac.
 
 ## Decisions
 
@@ -59,10 +59,13 @@ active — preparing initial commit and push to the user-provided GitHub remote.
 - `uv run --locked --extra transformers python -m resume_study.cli check --config
   configs/macos.yaml` — ready; 32 conditions. Two-case `qwen_macos_config_smoke` run
   and analysis completed with the Mac config. Tests rerun: 72 passed; Ruff lint passed.
+- Initial commit `16b596a` pushed successfully with `git push -u origin main` to
+  `git@github.com:iwgithub2/llm-resume-study.git`; only source, synthetic inputs,
+  configuration, lockfile, tests and documentation published.
 
 ## Risks / blockers
 
 - NVIDIA/vLLM and MPS inference not executed on this CPU validation path.
-- GitHub SSH access verified; provided remote has no refs before the initial push.
+- GitHub SSH push succeeded; `main` tracks `origin/main`.
 - Smoke responses alone support no empirical conclusion; the small model copied the
   prompt's example reason. Treat this as execution validation only.  
