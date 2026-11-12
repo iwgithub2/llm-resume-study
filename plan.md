@@ -8,7 +8,8 @@ Develop a source-backed literature-review direction and publish the pilot code/f
 
 ## Status
 
-active — literature synthesis and curated pilot evidence being prepared for GitHub.
+done — literature-review roadmap, pilot implementation/findings and curated evidence
+published to iwgithub2/llm-resume-study on main (content commit77cdaba).
 
 ## Now
 
@@ -26,7 +27,8 @@ active — literature synthesis and curated pilot evidence being prepared for Gi
 
 ## Next
 
-1. Commit/push the validated review, pilot implementation and selected evidence.
+1. Read the source matrix and complete full-method extraction/search updates before
+   making systematic-review or novelty claims.
 2. Validate partial-credit anchors with blinded human ratings, then run the eager
    80-case subset and held-out controls using configs/pilot_qwen4b_eager.yaml;
    retain it as a separate condition and include a small eager repeat audit.
@@ -42,7 +44,7 @@ active — literature synthesis and curated pilot evidence being prepared for Gi
 - Eager/SDPA outputs differ materially. No silent fallback or pooling.
 - Original1–5 example remains separate from supplied0–100 task. No original edits.
 - User requested committing/pushing the pilot changes, findings and review ideas to
-  git@github.com:iwgithub2/llm-resume-study.git; origin/main is still cadd21f.
+  git@github.com:iwgithub2/llm-resume-study.git; content commit77cdaba pushed successfully.
 
 ## Verify
 
@@ -52,6 +54,7 @@ active — literature synthesis and curated pilot evidence being prepared for Gi
 - Literature package:13 unique bibliography/source keys; local Markdown links verified.
 - Evidence archive:142 unique members,141 payload hashes and ZIP integrity verified;
   original primaryJSONL hash preserved. Independent scientific and publication reviews passed.
+- git push origin main —published content commit77cdaba; final status update follows.
 - python -m resume_study.pilot --run-id audit --audit-only —1,200audited/80selected.
 - python -m resume_study.pilot --run-id qwen4b_pilot_20261112 —80complete,
   20.80minutes inference; maximum observed MPS driver allocation11.93GiB.
