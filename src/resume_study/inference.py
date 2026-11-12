@@ -247,7 +247,7 @@ class TransformersBackend(ChatBackend):
                 local_files_only=True,
                 trust_remote_code=False,
                 dtype=getattr(torch, cfg.dtype),
-                attn_implementation="eager",
+                attn_implementation=cfg.attention_implementation,
             )
             .to(cfg.device)
             .eval()
@@ -269,9 +269,10 @@ class TransformersBackend(ChatBackend):
             "generation_config": self.generation.to_dict(),
             "effective_device": str(self.model.device),
             "dtype": str(self.model.dtype),
-            "attention": "eager",
+            "attention": cfg.attention_implementation,
             "deterministic_algorithms": True,
             "execution": "one request at a time; per-condition seed",
+            "use_model_defaults": False,
         }
 
     def generate(self, messages: list[list[dict]], seeds: list[int]) -> list[str]:
@@ -286,7 +287,9 @@ class TransformersBackend(ChatBackend):
                 self.cfg.device
             )
             with torch.inference_mode():
-                tokens = self.model.generate(**encoded, generation_config=self.generation)
+                tokens = self.model.generate(
+                    **encoded, generation_config=self.generation, use_model_defaults=False
+                )
             responses.append(
                 self.tokenizer.decode(
                     tokens[0, encoded.input_ids.shape[1] :], skip_special_tokens=True

@@ -1,0 +1,18 @@
+Job description and scoring rubric:
+<job>
+{{ job_description }}
+</job>
+
+Candidate resume:
+<resume>
+{{ resume }}
+</resume>
+
+Evaluate this resume independently. Apply the job's 40/35/25 rubric, avoid double
+counting, and award partial credit only for evidence actually present.
+Return a single JSON object with exactly these three keys, without Markdown:
+- score: an integer from 0 to 100 representing the total rubric score.
+- interview: the string "yes" when score is at least 70, otherwise the string "no".
+- justifications: an array of exactly two nonempty strings, each at most 20 words,
+  describing job-relevant evidence or gaps behind the score.
+Do not include category subtotals, extra fields, or text outside the JSON object.  

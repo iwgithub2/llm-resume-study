@@ -1,71 +1,73 @@
 # Plan: Local LLM resume study
 
-Updated: 2026-11-10
+Updated: 2026-11-12
 
 ## Goal
 
-Deliver a reproducible local name-substitution research pipeline and synthetic examples.
+Develop a source-backed literature-review direction and publish the pilot code/findings.
 
 ## Status
 
-done — initial repository published to `iwgithub2/llm-resume-study` on `main`.
+active — literature synthesis and curated pilot evidence being prepared for GitHub.
 
 ## Now
 
-- Delivered strict slot substitution, three explicit backends, locked dependencies,
-  resumable factorial experiments, provenance snapshots, paired analysis and documentation.
+- Pulled cadd21f; preserved all supplied materials. Audited 1,200 checksums and exact
+  slot invariance: 400 distinct texts, three identical repetitions each.
+- Added a separate 0–100 manifest adapter and matched-job diagnostic analysis.
+- SDPA: 55/80 strict-valid; 16/16 raw reference repeats identical.
+- Eager: 16/16 references valid; all eight HIGH/LOW pairs separate by 3–23 points.
+  All supplied references still exceed70; unrelated controls scored10/no and0/no.
+- Full evidence and recommendations: docs/pilot-2026-11-12.md.
+- Added four literature-review directions,13 annotated primary-source records,
+  BibTeX and a search/extraction protocol; seed narrative review, not systematic.
+- Curated142-member evidence ZIP preserves raw bytes/checksums and source snapshots;
+  weights, caches, environments and unrelated runs excluded.
 
 ## Next
 
-1. Optional: validate primary vLLM backend on the intended Linux NVIDIA host.
-2. Researcher: choose experimental name groups and review the study protocol.
-3. Optional: add a separately pinned vLLM Metal adapter if the study requires vLLM on Mac.
+1. Commit/push the validated review, pilot implementation and selected evidence.
+2. Validate partial-credit anchors with blinded human ratings, then run the eager
+   80-case subset and held-out controls using configs/pilot_qwen4b_eager.yaml;
+   retain it as a separate condition and include a small eager repeat audit.
+3. Add independent profiles/names rather than redundant greedy repetitions.
 
 ## Decisions
 
-- Python 3.12; vLLM primary, Transformers explicit fallback; no paid APIs.
-- Pin model and dependencies; JSONL is the durable source, CSV is regenerated.
-- Never infer demographics; synthetic group labels are researcher metadata.
-- Fixed original batch replay preserves resume scheduling; invalid parses count as completed.
-- Read-only verifier/adversarial reviews completed; findings fixed with regressions.
-- User authorized committing and pushing to `git@github.com:iwgithub2/llm-resume-study.git`.
-- Added `configs/macos.yaml` for the tested Transformers CPU baseline. Current upstream
-  vLLM Metal supports Apple Silicon, but is not integrated into the pinned CUDA adapter.
+- Qwen/Qwen3-4B-Instruct-2507 at cdbee75f17c01a7cc42f958dc650907174af0554.
+- Mac M5/24GiB, torch2.8.0, Transformers4.57.1, MPS float16; no API/new dependencies.
+- Main: SDPA, temperature0, max160tokens, shuffle20261112, original row seeds.
+- Fixed checkpoint-default merging with use_model_defaults=False; real tiny-Qwen3
+  regression proves recent checkpoint defaults cannot re-enable sampling.
+- Eager/SDPA outputs differ materially. No silent fallback or pooling.
+- Original1–5 example remains separate from supplied0–100 task. No original edits.
+- User requested committing/pushing the pilot changes, findings and review ideas to
+  git@github.com:iwgithub2/llm-resume-study.git; origin/main is still cadd21f.
 
 ## Verify
 
-- `uv sync --locked --extra dev --extra transformers` — installed Python 3.12.12,
-  torch 2.8.0 and Transformers 4.57.1; full `uv.lock` includes the vLLM extra.
-- `uv run --locked --extra dev --extra transformers pytest -q` — 72 passed.
-- `uv run --locked --extra dev --extra transformers ruff check src tests` — passed.
-- `.venv/bin/ruff format src tests` and `ruff format --check src tests` — formatted;
-  workspace-required final trailing spaces applied afterward; lint/tests passed again.
-- `bash -n scripts/setup.sh` — passed.
-- `uv run --locked --extra transformers python -m resume_study.cli generate` — 8 variants.
-- `uv run --locked --extra transformers python -m resume_study.cli run --backend mock
-  --run-id example_mock --limit 2`, then same with `--resume` replacing `--limit 2`
-  — 32 unique valid records, complete; paired analysis exported.
-- `uv run --locked --extra transformers python -m resume_study.cli run --backend transformers
-  --device cpu --batch-size 1 --limit 2 --run-id qwen_cpu_smoke` — 2 real Qwen responses,
-  both valid (score 4 / shortlist); deliberately incomplete 2-of-32 smoke schedule.
-- `uv run --locked --extra transformers python -m resume_study.cli analyze --run-id
-  qwen_cpu_smoke` — exported analysis; labels incomplete coverage.
-- Final runs used `HF_HOME=$PWD/.cache/huggingface`, `HF_HUB_OFFLINE=1`,
-  `OMP_NUM_THREADS=4`, `MKL_NUM_THREADS=4`. Cache downloaded before offline mode.
-- Host: macOS 27.0.1 arm64, Apple M5, 24 GiB RAM; CPU inference.
-- Sandbox-specific uv cache/interpreter overrides: `UV_CACHE_DIR=/private/tmp/llm-resume-uv-cache`,
-  `UV_PYTHON_INSTALL_DIR=/private/tmp/llm-resume-python`; uv 0.9.28 run outside macOS sandbox.
-- Ignore rules checked for weights/cache/venv, private data, outputs and credentials.
-- `uv run --locked --extra transformers python -m resume_study.cli check --config
-  configs/macos.yaml` — ready; 32 conditions. Two-case `qwen_macos_config_smoke` run
-  and analysis completed with the Mac config. Tests rerun: 72 passed; Ruff lint passed.
-- Initial commit `16b596a` pushed successfully with `git push -u origin main` to
-  `git@github.com:iwgithub2/llm-resume-study.git`; only source, synthetic inputs,
-  configuration, lockfile, tests and documentation published.
+- uv run --locked --extra dev --extra transformers pytest -q —83passed.
+- uv run --locked --extra dev --extra transformers ruff check src tests —passed.
+- bash -n scripts/setup.sh —passed.
+- Literature package:13 unique bibliography/source keys; local Markdown links verified.
+- Evidence archive:142 unique members,141 payload hashes and ZIP integrity verified;
+  original primaryJSONL hash preserved. Independent scientific and publication reviews passed.
+- python -m resume_study.pilot --run-id audit --audit-only —1,200audited/80selected.
+- python -m resume_study.pilot --run-id qwen4b_pilot_20261112 —80complete,
+  20.80minutes inference; maximum observed MPS driver allocation11.93GiB.
+- python -m resume_study.pilot_analysis --run-dir results/qwen4b_pilot_20261112
+  --output analysis/qwen4b_pilot_20261112 —tables independently verified.
+- Supplementary scripts and raw data: results/qwen4b_attention_check/ and
+  results/qwen4b_eager_reference_check/;14newreference calls plus2earlierprobes.
+- Runtime: HF_HOME=$PWD/.cache/huggingface, HF_HUB_OFFLINE=1,
+  OMP_NUM_THREADS=4, MKL_NUM_THREADS=4. Full commands: docs/PILOT.md.
+- Sandbox UV_CACHE_DIR=/private/tmp/llm-resume-uv-cache and
+  UV_PYTHON_INSTALL_DIR=/private/tmp/llm-resume-python; UV outside macOS sandbox.
 
-## Risks / blockers
+## Risks / limitations
 
-- NVIDIA/vLLM and MPS inference not executed on this CPU validation path.
-- GitHub SSH push succeeded; `main` tracks `origin/main`.
-- Smoke responses alone support no empirical conclusion; the small model copied the
-  prompt's example reason. Treat this as execution validation only.  
+- Eager reference check is exploratory; no full eager80run or CPUfloat32 cross-check.
+- HIGH/LOW are intended relative manipulations, not validated hiring labels.
+- Keep outputs separate by attention implementation and inspect grounding.
+- Raw data/model cache remain ignored. Proxy codes do not establish identities;
+  repeated identical inputs are not independent applicants.  

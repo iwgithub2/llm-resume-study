@@ -11,7 +11,7 @@ from datetime import UTC, datetime
 from pathlib import Path
 
 from .conditions import make_conditions
-from .config import Config, Model, digest, local_path, safe_id
+from .config import Config, Model, StrictModel, digest, local_path, safe_id
 from .inference import (
     Backend,
     InferenceError,
@@ -44,7 +44,7 @@ def file_hash(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def provenance(cfg: Config, root: Path, inputs: list[Path], config_path: Path) -> dict:
+def provenance(cfg: StrictModel, root: Path, inputs: list[Path], config_path: Path) -> dict:
     sources = sorted((root / "src").rglob("*.py"))
     sources += [
         root / p

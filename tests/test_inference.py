@@ -74,4 +74,70 @@ def test_missing_cuda_has_actionable_error_and_no_fallback(study, monkeypatch):
     monkeypatch.setattr("resume_study.inference.platform.system", lambda: "Linux")
     monkeypatch.setattr("resume_study.inference.importlib.util.find_spec", lambda _: object())
     with pytest.raises(InferenceError, match="CUDA unavailable"):
-        preflight(Model.model_validate(data))  
+        preflight(Model.model_validate(data))
+
+
+def test_explicit_greedy_settings_override_recent_model_defaults(study):
+    # Transformers >=4.50 can replace even explicitly set values equal to global
+    # defaults. A recent Qwen config must not turn our temperature-zero run stochastic.
+    torch = pytest.importorskip("torch")
+    transformers = pytest.importorskip("transformers")
+    from resume_study.inference import TransformersBackend
+
+    config = transformers.Qwen3Config(
+        vocab_size=32,
+        hidden_size=16,
+        intermediate_size=32,
+        num_hidden_layers=1,
+        num_attention_heads=2,
+        num_key_value_heads=1,
+        head_dim=8,
+    )
+    model = transformers.Qwen3ForCausalLM(config).eval()
+    model.generation_config = transformers.GenerationConfig(
+        do_sample=True, temperature=0.7, top_k=20, top_p=0.8, transformers_version="4.57.1"
+    )
+    calls = []
+    original = model._prepare_generation_config
+
+    def capture(*args, **kwargs):
+        generation, remaining = original(*args, **kwargs)
+        calls.append(generation)
+        return generation, remaining
+
+    model._prepare_generation_config = capture
+
+    class Encoding(dict):
+        @property
+        def input_ids(self):
+            return self["input_ids"]
+
+        def to(self, device):
+            return self
+
+    class TinyTokenizer(Tokenizer):
+        def __call__(self, text, **kwargs):
+            return Encoding(
+                input_ids=torch.tensor([[1, 2]]), attention_mask=torch.ones(1, 2, dtype=torch.long)
+            )
+
+        def decode(self, tokens, **kwargs):
+            return "raw"
+
+    engine = TransformersBackend.__new__(TransformersBackend)
+    engine.cfg = study[0].model
+    engine.model = model
+    engine.tokenizer = TinyTokenizer()
+    engine.generation = transformers.GenerationConfig(
+        max_new_tokens=1,
+        do_sample=False,
+        temperature=1.0,
+        top_p=1.0,
+        top_k=50,
+        pad_token_id=0,
+        bos_token_id=1,
+        eos_token_id=31,
+    )
+    assert engine.generate([[{"role": "user", "content": "test"}]], [101]) == ["raw"]
+    assert calls and calls[0].do_sample is False
+    assert calls[0].top_p == 1.0 and calls[0].temperature == 1.0  

@@ -1,0 +1,19 @@
+root: ..
+dataset: resumes-and-shi
+selection: pilot80
+order_seed: 20261112
+system_prompt: templates/pilot_system.txt
+evaluation_prompt: templates/pilot_evaluation.j2
+model:
+  name: Qwen/Qwen3-4B-Instruct-2507
+  revision: cdbee75f17c01a7cc42f958dc650907174af0554
+  backend: transformers
+  device: mps
+  dtype: float16
+  attention_implementation: sdpa
+  temperature: 0.0
+  top_p: 1.0
+  max_new_tokens: 160
+  seed: 101
+  max_model_len: 4096
+  local_files_only: true  

@@ -79,3 +79,32 @@ Edit `configs/experiment.yaml`, `configs/name_groups.yaml`, synthetic inputs und
 `data/`, and prompt files under `templates/`. See [REPRODUCIBILITY.md](REPRODUCIBILITY.md)
 for the full protocol, output dictionary, cache/offline instructions, limitations,
 and GitHub publication commands. [plan.md](plan.md) records local verification status.  
+
+## Pilot on the supplied resumes
+
+For the user-added `resumes-and-shi/` dataset, use the separate 0–100 manifest pilot:
+
+```bash
+uv run --locked --extra transformers python -m resume_study.pilot --config configs/pilot_qwen4b_eager.yaml --run-id audit --audit-only
+uv run --locked --extra transformers python -u -m resume_study.pilot --config configs/pilot_qwen4b_eager.yaml --run-id qwen4b_eager_pilot
+```
+
+This uses pinned Qwen3 4B on Mac MPS and an 80-call diagnostic subset. Download/cache
+instructions, exact selection, new output schema, analysis and resume commands are in
+[docs/PILOT.md](docs/PILOT.md). The supplied files and original example stay intact.
+The frozen SDPA pilot and supplementary eager checks are documented separately in
+[the pilot report](docs/pilot-2026-11-12.md); their outputs must not be pooled.
+
+## Literature review and published findings
+
+Start with the [literature-review ideas and synthesis outline](docs/literature-review/README.md),
+the [13-source annotated reading list](docs/literature-review/sources.md), and
+[BibTeX references](docs/literature-review/references.bib). The recommended focus is
+distinguishing controlled identity-signal effects from evaluator validity and
+reproducibility problems. This is a narrative-review seed set, not a completed
+systematic review or a claim that the pilot demonstrates demographic bias.
+
+The [published evidence archive](docs/pilot-artifacts/README.md) contains selected
+frozen raw outputs, exact source/input snapshots, checksums and analysis tables.
+Model weights, caches, environments and unrelated runs remain excluded.
+  

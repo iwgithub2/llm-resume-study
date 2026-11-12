@@ -1,5 +1,12 @@
 # Reproduction protocol
 
+The user-added `resumes-and-shi/` 0–100 study has a separate manifest pilot; see
+[docs/PILOT.md](docs/PILOT.md). The protocol below documents the original 1–5 example.
+Transformers attention can be selected explicitly with `model.attention_implementation`
+(`eager` by default, or `sdpa`); keep it fixed within a run. The backend explicitly
+disables checkpoint generation-default merging with `use_model_defaults=False` so
+recent model defaults cannot silently re-enable sampling in a greedy condition.
+
 ## Scope and research design
 
 Pipeline: validate YAML and synthetic inputs → fill explicit name slots → verify
