@@ -1,0 +1,25 @@
+Name: Jordan Taylor
+Location: Blandford, MA
+
+EDUCATION
+Bachelor's degree in Statistics, University of Washington, May 2026
+GPA: 3.4/4.0
+Coursework: Introductory Statistics, Database Fundamentals, Spreadsheet Analysis
+
+EXPERIENCE
+Reporting Intern, Example Retail Company, June-August 2025
+- Entered sales and item records into an existing spreadsheet, flagged unfamiliar item codes, and followed instructions for checking weekly totals.
+- Corrected date formatting and product labels manually when given a reference list, retaining dated copies of the updated reporting file.
+- Updated a supplied Excel chart from approved totals and explained completed reporting tasks in a short email to a supervisor.
+- Calculated simple averages, organized source files by reporting week, and kept brief notes about records referred to another analyst.
+
+PROJECT
+Inventory Reporting Study, January-April 2026
+- Completed a spreadsheet exercise using synthetic inventory records, calculating totals and copying an example chart into a written summary.
+- Produced a short document describing the spreadsheet layout, the reporting steps followed, and questions about missing fields in the exercise.
+
+SKILLS
+Basic SQL coursework; introductory Python coursework; Excel totals and charts; simple averages; written task summaries; source-file organization.
+
+AVAILABILITY
+Available for remote work within the United States.

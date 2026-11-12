@@ -1,0 +1,25 @@
+Name: Allison Baker
+Location: Boston, MA
+
+EDUCATION
+Bachelor's degree in Statistics, University of Washington, May 2026
+GPA: 3.4/4.0
+Coursework: Introductory Statistics, Database Fundamentals, Spreadsheet Analysis
+
+EXPERIENCE
+Data Support Intern, Example Services Company, June-August 2025
+- Copied request and resolution records into an existing spreadsheet, checked required fields visually, and followed a supplied entry checklist.
+- Corrected weekly records when a supervisor supplied replacement values and saved dated copies of the updated spreadsheet for reference.
+- Updated a supplied Excel report using SUM formulas and filters to show request counts for review by a supervisor.
+- Sent a short status summary by email and kept analysis files in dated folders with supporting written notes.
+
+PROJECT
+Service Request Analysis, January-April 2026
+- Summarized a synthetic request dataset in a supplied spreadsheet, calculating totals and averages and identifying visibly incomplete rows for discussion.
+- Created a short report with copied charts and written instructions describing the spreadsheet tabs and the main summary totals.
+
+SKILLS
+Basic SQL coursework; introductory Python coursework; Excel SUM formulas and filters; totals and averages; written notes; dated file organization.
+
+AVAILABILITY
+Available for remote work within the United States.

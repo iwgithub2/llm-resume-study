@@ -1,0 +1,25 @@
+Name: Katie Burns
+Location: Boston, MA
+
+EDUCATION
+Bachelor's degree in Business Administration, University of Washington, May 2026
+GPA: 3.4/4.0
+Coursework: Operations Management, Introductory Statistics, Spreadsheet Analysis
+
+EXPERIENCE
+Operations Support Intern, Example Services Company, June-August 2025
+- Used SQL joins to connect request and completion records, then calculated weekly backlog and turnaround measures with documented inclusion rules.
+- Built Excel pivot tables and lookup formulas to compare workflow stages and checked unusual totals against the underlying request records.
+- Mapped the request-handling process, identified a stage associated with longer waits, and explained a proposed change to a supervisor.
+- Summarized median and average turnaround times, maintained a calculation guide, and recorded changes to formulas in a shared change log.
+
+PROJECT
+Service Queue Review, January-April 2026
+- Analyzed synthetic queue records using SQL and Excel, comparing throughput and waiting-time summaries across two documented process configurations.
+- Prepared a process map and written recommendation that explained the calculation steps, assumptions, and limits of the comparison.
+
+SKILLS
+Excel pivot tables and lookups; SQL joins and aggregation; operational measures; process mapping; descriptive statistics; documented change tracking.
+
+AVAILABILITY
+Available for remote work within the United States.

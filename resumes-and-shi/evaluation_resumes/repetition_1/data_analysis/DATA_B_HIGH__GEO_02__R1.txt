@@ -1,0 +1,25 @@
+Name: Jordan Taylor
+Location: Needham, MA
+
+EDUCATION
+Bachelor's degree in Statistics, University of Washington, May 2026
+GPA: 3.4/4.0
+Coursework: Introductory Statistics, Database Fundamentals, Spreadsheet Analysis
+
+EXPERIENCE
+Reporting Intern, Example Retail Company, June-August 2025
+- Joined sales and item tables with SQL, investigated unmatched item codes, and reconciled row counts before producing weekly summaries.
+- Used Python and pandas to standardize dates and product categories, recording the cleaning steps in a reusable analysis script.
+- Created Excel pivot tables and lookup formulas for an inventory dashboard and explained stock-movement patterns to a nontechnical supervisor.
+- Calculated descriptive summaries, tracked script changes in Git, and documented assumptions about missing records in the weekly analysis.
+
+PROJECT
+Inventory Reporting Study, January-April 2026
+- Built a SQL and Python analysis of synthetic inventory records, checking duplicates and comparing mean and median item movement.
+- Produced a reproducible dashboard and README describing the calculations, validation checks, and limitations of the available inventory data.
+
+SKILLS
+SQL joins and aggregation; Python and pandas; Excel dashboards and lookups; descriptive statistics; Git; documented validation procedures.
+
+AVAILABILITY
+Available for remote work within the United States.

@@ -1,0 +1,25 @@
+Name: Meredith Rogers
+Location: Boston, MA
+
+EDUCATION
+Bachelor's degree in Computer Science, University of Washington, May 2026
+GPA: 3.4/4.0
+Coursework: Data Structures, Software Engineering, Database Fundamentals
+
+EXPERIENCE
+Software Support Intern, Example Applications Company, June-August 2025
+- Implemented Python functions that validated booking requests and stored accepted records, using dictionaries and lists to organize application data.
+- Wrote automated tests for valid, missing, and duplicate inputs, then investigated failures and documented the resulting fixes.
+- Reproduced reported defects, proposed small code changes through Git branches, and explained the changes during teammate reviews.
+- Used basic SQL queries to check stored requests and maintained a short setup guide for another intern.
+
+PROJECT
+Campus Booking Tool, January-April 2026
+- Built a small Python booking application with SQLite storage, reusable functions, and tests covering the principal request-handling cases.
+- Tracked work through Git commits and a README describing installation, database structure, and known limitations of the application.
+
+SKILLS
+Python functions and data structures; automated tests; debugging; basic SQL; Git branches and reviews; technical documentation.
+
+AVAILABILITY
+Available for remote work within the United States.

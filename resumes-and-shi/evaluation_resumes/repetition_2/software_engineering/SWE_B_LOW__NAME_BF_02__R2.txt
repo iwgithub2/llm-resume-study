@@ -1,0 +1,25 @@
+Name: Tyra Cooks
+Location: Boston, MA
+
+EDUCATION
+Bachelor's degree in Computer Science, University of Washington, May 2026
+GPA: 3.4/4.0
+Coursework: Data Structures, Software Engineering, Database Fundamentals
+
+EXPERIENCE
+Technical Intern, Example Systems Company, June-August 2025
+- Sorted service logs into folders, copied status totals into a supplied spreadsheet, and flagged records that did not match the examples.
+- Followed a manual import checklist and recorded failed imports for investigation by a developer responsible for the existing tool.
+- Shared screenshots and task updates with a teammate, using review comments to improve the clarity of issue descriptions.
+- Checked exported record counts against a spreadsheet and updated installation instructions after observing a demonstration of the tool.
+
+PROJECT
+Service Log Importer, January-April 2026
+- Modified a supplied Python script to print selected service-log fields and practiced file reading and loops using small examples.
+- Saved dated script copies with a short note explaining the input format and steps for running the classroom example.
+
+SKILLS
+Introductory Python file reading and loops; manual import checks; spreadsheet totals; issue descriptions; installation notes; file organization.
+
+AVAILABILITY
+Available for remote work within the United States.

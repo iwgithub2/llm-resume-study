@@ -1,0 +1,25 @@
+Name: {{NAME}}
+Location: {{LOCATION}}
+
+EDUCATION
+Bachelor's degree in Computer Science, {{UNIVERSITY}}, May 2026
+GPA: 3.4/4.0
+Coursework: Data Structures, Software Engineering, Database Fundamentals
+
+EXPERIENCE
+Technical Intern, Example Systems Company, June-August 2025
+- Developed a Python command-line tool that parsed service logs, grouped records by status, and handled malformed entries without stopping.
+- Added unit tests for parsing and grouping functions and used failing examples to investigate defects in the import process.
+- Used Git branches and pull requests to share changes, responding to review comments and explaining implementation decisions to a teammate.
+- Queried a small SQL database to validate imported counts and documented the tool configuration and error messages.
+
+PROJECT
+Service Log Importer, January-April 2026
+- Implemented a Python log importer using dictionaries, reusable functions, SQL inserts, and automated tests for representative input errors.
+- Maintained a Git repository with a README explaining the data format, execution steps, and limitations of the importer.
+
+SKILLS
+Python file parsing and data structures; automated tests; debugging; basic SQL; Git collaboration; setup and error documentation.
+
+AVAILABILITY
+Available for remote work within the United States.

@@ -1,0 +1,25 @@
+Name: Chad Nichols
+Location: Boston, MA
+
+EDUCATION
+Bachelor's degree in Statistics, University of Washington, May 2026
+GPA: 3.4/4.0
+Coursework: Introductory Statistics, Database Fundamentals, Spreadsheet Analysis
+
+EXPERIENCE
+Data Support Intern, Example Services Company, June-August 2025
+- Used SQL joins to combine request and resolution tables, checked duplicate identifiers and missing dates, and documented validation rules.
+- Cleaned weekly records with Python and pandas, retaining an original copy and recording the transformations applied to each field.
+- Built an Excel report using pivot tables and lookup formulas to summarize request counts and resolution times for a supervisor.
+- Explained the main findings in a short presentation and used Git to track analysis scripts and supporting documentation.
+
+PROJECT
+Service Request Analysis, January-April 2026
+- Analyzed a synthetic request dataset with SQL and Python, calculating descriptive statistics and checking how missing records affected the summaries.
+- Created a reproducible notebook, dashboard, and README that documented assumptions and explained the results to a nontechnical reader.
+
+SKILLS
+SQL joins and aggregation; Python and pandas; Excel pivot tables and lookups; descriptive statistics; Git; reproducible documentation.
+
+AVAILABILITY
+Available for remote work within the United States.

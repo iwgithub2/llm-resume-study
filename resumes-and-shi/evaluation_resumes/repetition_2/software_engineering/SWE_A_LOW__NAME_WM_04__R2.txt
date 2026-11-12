@@ -1,0 +1,25 @@
+Name: Chad Nichols
+Location: Boston, MA
+
+EDUCATION
+Bachelor's degree in Computer Science, University of Washington, May 2026
+GPA: 3.4/4.0
+Coursework: Data Structures, Software Engineering, Database Fundamentals
+
+EXPERIENCE
+Software Support Intern, Example Applications Company, June-August 2025
+- Checked booking forms against a supplied checklist and entered accepted records into a spreadsheet maintained by the software team.
+- Recorded missing and duplicate inputs in an issue log, then forwarded the examples to a developer for investigation.
+- Updated interface labels from approved wording, organized screenshots of reported defects, and explained outstanding items during teammate meetings.
+- Reviewed exported request lists using spreadsheet filters and edited an existing setup guide using instructions from another intern.
+
+PROJECT
+Campus Booking Tool, January-April 2026
+- Adapted a supplied Python booking example by changing prompts and practicing lists, dictionaries, and basic input checks in class.
+- Saved dated copies of project files and wrote a short document describing how to launch the supplied example.
+
+SKILLS
+Introductory Python coursework; basic lists and dictionaries; manual checklist testing; issue logging; spreadsheet filters; written instructions.
+
+AVAILABILITY
+Available for remote work within the United States.

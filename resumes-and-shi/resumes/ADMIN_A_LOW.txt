@@ -1,0 +1,25 @@
+Name: {{NAME}}
+Location: {{LOCATION}}
+
+EDUCATION
+Bachelor's degree in Communication, {{UNIVERSITY}}, May 2026
+GPA: 3.4/4.0
+Coursework: Professional Writing, Organizational Communication, Spreadsheet Applications
+
+EXPERIENCE
+Office Support Intern, Example Services Company, June-August 2025
+- Entered requests and deadlines into an existing spreadsheet, checked that required cells were filled, and referred unclear records to the responsible colleagues.
+- Added meetings to a calendar at times selected by a supervisor and circulated approved agenda files and task notes to participants.
+- Sent standard email responses from supplied templates, formatted documents, and forwarded possible spelling or date errors for another person to check.
+- Followed an existing meeting-preparation checklist and saved approved documents in folders using file names assigned by the office coordinator.
+
+PROJECT
+Meeting Coordination Exercise, January-April 2026
+- Completed a simulated meeting exercise using supplied calendar times, a prefilled spreadsheet tracker, approved agenda text, and standard participant messages.
+- Listed the steps completed, formatted the supplied materials, and saved dated copies of the files for the instructor to review.
+
+SKILLS
+Basic spreadsheet entry; document formatting; email templates; calendar entry; supplied checklists; dated file copies; written task summaries.
+
+AVAILABILITY
+Available for remote work within the United States.

@@ -1,0 +1,25 @@
+Name: Jordan Taylor
+Location: Boston, MA
+
+EDUCATION
+Bachelor's degree in Business Administration, University of Washington, May 2026
+GPA: 3.4/4.0
+Coursework: Operations Management, Introductory Statistics, Spreadsheet Analysis
+
+EXPERIENCE
+Inventory Support Intern, Example Distribution Company, June-August 2025
+- Used SQL queries to combine receipt and shipment records and calculated weekly throughput and inventory discrepancies using explicit definitions.
+- Built Excel lookup formulas and pivot tables to compare item movements, validating mismatches against the original receipt and shipment logs.
+- Mapped the receiving workflow, identified repeated handoff delays in the records, and presented an evidence-based recommendation to a supervisor.
+- Compared average and median processing times, documented the calculations, and maintained a change log for the recurring inventory report.
+
+PROJECT
+Inventory Workflow Review, January-April 2026
+- Examined synthetic inventory records with SQL and Excel, calculating throughput and comparing processing-time summaries for alternative workflow arrangements.
+- Created a process diagram and documented recommendation explaining the calculation rules, evidence for delays, and limits of the available records.
+
+SKILLS
+Excel lookups and pivot tables; SQL queries and joins; throughput measures; process mapping; descriptive statistics; calculation and change documentation.
+
+AVAILABILITY
+Available for remote work within the United States.

@@ -1,0 +1,25 @@
+Name: {{NAME}}
+Location: {{LOCATION}}
+
+EDUCATION
+Bachelor's degree in Business Administration, {{UNIVERSITY}}, May 2026
+GPA: 3.4/4.0
+Coursework: Operations Management, Introductory Statistics, Spreadsheet Analysis
+
+EXPERIENCE
+Operations Support Intern, Example Services Company, June-August 2025
+- Entered request and completion records into an existing worksheet, then copied weekly backlog totals supplied by a supervisor into a summary.
+- Used basic Excel formulas and filters to update workflow lists and referred unusual totals to the analyst maintaining the reporting file.
+- Followed the request-handling checklist, recorded incomplete tasks, and explained the status of assigned work during meetings with a supervisor.
+- Calculated simple totals and averages from selected rows, kept task notes, and saved dated copies of the weekly reporting worksheet.
+
+PROJECT
+Service Queue Review, January-April 2026
+- Reviewed a synthetic queue spreadsheet using supplied formulas, copying throughput totals and describing the process steps shown in an example diagram.
+- Prepared a written task summary that listed completed steps, reported the supplied totals, and recorded questions for a supervisor.
+
+SKILLS
+Basic Excel formulas and filters; introductory SQL coursework; record entry; supplied checklists; totals and averages; written task notes.
+
+AVAILABILITY
+Available for remote work within the United States.

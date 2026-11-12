@@ -1,0 +1,25 @@
+Name: Gregory Roberts
+Location: Boston, MA
+
+EDUCATION
+Bachelor's degree in Business Administration, University of Washington, May 2026
+GPA: 3.4/4.0
+Coursework: Operations Management, Introductory Statistics, Spreadsheet Analysis
+
+EXPERIENCE
+Inventory Support Intern, Example Distribution Company, June-August 2025
+- Copied receipt and shipment records into an existing worksheet and updated weekly throughput totals using definitions supplied by the reporting analyst.
+- Used Excel SUM formulas and filters to check item lists, forwarding mismatches to the colleague responsible for resolving inventory discrepancies.
+- Followed the receiving checklist, recorded delayed handoffs when instructed, and presented a summary of assigned tasks to a supervisor.
+- Calculated simple totals, kept notes about worksheet updates, and saved dated copies of the recurring inventory report in shared folders.
+
+PROJECT
+Inventory Workflow Review, January-April 2026
+- Reviewed synthetic inventory records in a supplied spreadsheet, copied processing-time summaries, and described workflow steps from an example receiving checklist.
+- Created a written activity summary explaining the supplied reporting steps, the tasks completed, and questions requiring clarification from a supervisor.
+
+SKILLS
+Basic Excel formulas and filters; introductory SQL coursework; inventory record entry; supplied checklists; simple totals; written update notes.
+
+AVAILABILITY
+Available for remote work within the United States.
